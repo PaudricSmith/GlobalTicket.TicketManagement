@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using GlobalTicket.TicketManagement.Application.Features.Events;
+using GlobalTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail;
+using GlobalTicket.TicketManagement.Application.Features.Events.Queries.GetEventsList;
 using GlobalTicket.TicketManagement.Domain.Entities;
 using System;
 using System.Collections.Generic;

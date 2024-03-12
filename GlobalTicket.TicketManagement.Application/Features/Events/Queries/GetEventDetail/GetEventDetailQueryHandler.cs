@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlobalTicket.TicketManagement.Application.Features.Events
+namespace GlobalTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail
 {
     public class GetEventDetailQueryHandler : IRequestHandler<GetEventDetailQuery, EventDetailVm>
     {
@@ -16,8 +16,8 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events
         private readonly IAsyncRepository<Category> _categoryRepository;
         private readonly IMapper _mapper;
 
-        public GetEventDetailQueryHandler(IMapper mapper, 
-            IAsyncRepository<Event> eventRepository, 
+        public GetEventDetailQueryHandler(IMapper mapper,
+            IAsyncRepository<Event> eventRepository,
             IAsyncRepository<Category> categoryRepository)
         {
             _mapper = mapper;
