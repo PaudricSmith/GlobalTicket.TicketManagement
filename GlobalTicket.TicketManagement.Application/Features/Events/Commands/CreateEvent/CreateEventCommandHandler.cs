@@ -38,7 +38,7 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.Cre
             @event = await _eventRepository.AddAsync(@event);
 
             // Sending email notification to admin address
-            var email = new Email() { To = "gill@snowball.be", 
+            var email = new Email() { To = "smithpaudricwork@gmail.com", 
                 Body = $"A new event was created: {request}", 
                 Subject = "A new event was created"
             };
